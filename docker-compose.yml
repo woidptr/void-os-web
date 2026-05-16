@@ -1,0 +1,15 @@
+services:
+  void-os-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: void-os-web
+    restart: unless-stopped
+    networks:
+      - web_proxy
+    environment:
+      - GIN_MODE=release
+
+networks:
+  web_proxy:
+    external: true
