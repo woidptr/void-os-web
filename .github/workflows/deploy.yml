@@ -16,6 +16,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /var/www/void-os-web
+            cd ~/void-os-web
             git pull origin main
             docker compose up -d --build
