@@ -1,10 +1,8 @@
 <script lang="ts">
-    // Project Configuration - Update these with your info!
     const projectName = "void";
-    const githubLink = "https://github.com/yourusername/void-os";
+    const githubLink = "https://github.com/woidptr/void-os";
     const developerName = "[Your Name]";
-    const emailAddress = "your.email@example.com";
-    const linkedinLink = "[Your LinkedIn URL]";
+    const emailAddress = "woidptr@gmail.com";
 </script>
 
 <div class="min-h-screen bg-[#050505] text-[#e0e0e0] font-sans antialiased selection:bg-[#00ffcc] selection:text-[#050505]">
@@ -134,8 +132,7 @@
         <footer class="py-10 text-center text-sm text-[#888888]">
             <p>Designed & Developed by {developerName}.</p>
             <p class="mt-2.5">
-                <a href="mailto:{emailAddress}" class="text-[#00ffcc] no-underline hover:underline">Contact Me</a> | 
-                <a href={linkedinLink} class="text-[#00ffcc] no-underline hover:underline" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="mailto:{emailAddress}" class="text-[#00ffcc] no-underline hover:underline">Contact Me</a>
             </p>
         </footer>
     </div>
