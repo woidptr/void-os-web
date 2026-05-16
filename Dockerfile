@@ -7,7 +7,7 @@ RUN cd web && npm install
 COPY web/ ./web/
 RUN cd web && npm run build
 
-FROM golang:1.22-alpine AS server_builder
+FROM golang:1.25-alpine AS server_builder
 WORKDIR /app
 
 COPY server/go.mod server/go.sum* server/main.go ./server/
